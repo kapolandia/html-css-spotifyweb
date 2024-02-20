@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -15,6 +17,9 @@
     <main>
             <div class="column menu">
                 <img src="./assets/img/logo.svg" alt="" class="padding-40 logo">
+                <div class="row">
+                    <img src="./assets/img/logo-small.svg" alt="" id="logo-only">
+                </div>
                 <div class="row margin-top-10 padding-left-40">
                     <img src="./assets/img/home.svg" alt="">
                     <p>Home</p>
@@ -66,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="row center margin-top-20 gap-20">
+                <div class="flex-wrap center margin-top-20 gap-20">
                     <h5>IN EVIDENZA</h5>
                     <h5>PODCAST</h5>
                     <h5>CLASSIFICHE</h5>
@@ -76,7 +81,7 @@
                 </div>
                 <div class="column padding-40">
                     <h1>Recently Played</h1>
-                    <div class="rolumn">
+                    <div class="flex-wrap flex-start">
                         <div class="song-cont">
                             <img src="./assets/img/metal_lifting.jpg" alt="">
                             <h4>Heavy Metal</h4>
@@ -109,9 +114,9 @@
                         </div>
                     </div>
 
-                    <h1 class="margin-top-50">Creato per John Doe</h1>
+                    <h1 class="margin-top-20">Creato per John Doe</h1>
                     <p class="subtitle margin-top-10">Più ascolti più saranno accurati i suggerimenti</p>
-                    <div class="rolumn">
+                    <div class="flex-wrap flex-start">
                         <div class="song-cont">
                             <img src="./assets/img/radar.jpeg" alt="">
                             <h4>Release Radar</h4>
@@ -124,7 +129,7 @@
 
                     <h1 class="margin-top-50">Artisti più popolari</h1>
                     <p class="subtitle margin-top-10">Più ascolti più saranno accurati i suggerimenti</p>
-                    <div class="rolumn">
+                    <div class="flex-wrap flex-start">
                         <div class="song-cont">
                             <img src="./assets/img/youg.jpeg" alt="" class="circle-img">
                             <h4>Lana Del Rey</h4>
@@ -138,7 +143,42 @@
             </div>
     </main>
     
-    <footer>
+    <footer class="space-bet">
+        <div class="row center-space">
+            <img src="./assets/img/player_left.jpg" alt="">
+            <div class="column">
+                <h6>Hilltop Hoods</h6>
+                <p class="subtitle">Brano Nome</p>
+            </div>
+            <div class="rolumn">
+                <i class="fa-regular fa-heart inactive-btn"></i>
+                <i class="fa-regular fa-folder inactive-btn"></i>
+            </div>
+        </div>
+        <div class="column center grow">
+            <div class="row center gap-20">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play play-btn"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="row center margin-top-10 gap-20 w-50-100">
+                <p>0:25</p>
+                <div style="height: 5px;width: 100%;border-radius: 10px;background-color: #5A5A5A;">
+                    <div style="height: 5px;width: 17%;border-radius: 10px;background-color: #C1C1C1;"></div>
+                </div>
+                <p>4:35</p>
+            </div>
+        </div>
+        <div class="row gap-20 center">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div style="height: 5px;width: 80px;border-radius: 10px;background-color: #5A5A5A;">
+                <div style="height: 5px;width: 30%;border-radius: 10px;background-color: #C1C1C1;"></div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
